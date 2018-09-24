@@ -108,7 +108,6 @@ client.on('guildMemberRemove', member => {
   channel.sendEmbed(embed);
 });
 
-//////////////////////////
 client.on("guildMemberAdd", member => {
     var channel = member.guild.channels.find("name", "oto-rol");
 
@@ -121,7 +120,7 @@ client.on("guildMemberAdd", member => {
 
   member.send("Aramıza hoş geldin! Artık ❌ＫＡＹＩＴＳＩＺ ＵＹＥ❌ Rolüne Sahipsin İyi Eğlenceler")
 
-});z
+});
 
 client.elevation = message => {
   if(!message.guild) {
