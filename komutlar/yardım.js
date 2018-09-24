@@ -1,40 +1,52 @@
-﻿const Discord = require('discord.js');
-const ayarlar = require('../ayarlar.json');
+const Discord = require("discord.js");
+const moment = require("moment");
+var green = process.env.NODE_DISABLE_COLORS ? '' : '\x1b[32m';
 
-var prefix = ayarlar.prefix;
+require("moment-duration-format");
 
-exports.run = (client, message, params) => {
-  const embedyardim = new Discord.RichEmbed()
-  .setTitle("Komutlar")
-  .setDescription('')
-  .setColor(0x00ffff)
-  .addField("**Eğlence ve Kullanıcı Komutları:**", `h!banned = Dene ve Gör! \nh!avatarım = Avatarınınızı Gösterir. \nh!herkesebendençay = Herkese Çay Alırsınız. \nh!koş = Koşarsınız.\nh!çayiç = Çay İçersiniz. \nh!çekiç = İstediğiniz Kişiye Çekiç Atarsınız. \nh!çayaşekerat = Çaya Şeker Atarsınız. \nh!yumruh-at = Yumruk Atarsınız. \nh!yaz = Bota İstediğiniz Şeyi Yazdırırsınız. \nh!sunucuresmi = BOT Sunucunun Resmini Atar. \nh!sunucubilgi = BOT Sunucu Hakkında Bilgi Verir. \nh!kullanıcıbilgim = Sizin Hakkınızda Bilgi Verir. `)
-  .addField("**Yetkilisi Komutlar**", `h!ban = İstediğiniz Kişiyi Sunucudan Banlar. \nh!kick  = İstediğiniz Kişiyi Sunucudan Atar. \nh!unban = İstediğiniz Kişinin Yasağını Açar. \nh!sustur = İstediğiniz Kişiyi Susturur. \nh!oylama = Oylama Açar. \nh!duyuru = Güzel Bir Duyuru Görünümü Sağlar.`)
-  .addField("**Ana Komutlar**", "h!yardım = BOT Komutlarını Atar. \nh!bilgi = BOT Kendisi Hakkında Bilgi Verir. \nh!ping = BOT Gecikme Süresini Söyler. \nh!davet = BOT Davet Linkini Atar. \nh!istatistik = BOT İstatistiklerini Atar.")
-  .addField("**Yapımcı**", " **SESSİZ | ARMY. Utku Öztürk** ")
-  .setFooter('**--------------------------**')
-  if (!params[0]) {
-    const commandNames = Array.from(client.commands.keys());
-    const longest = commandNames.reduce((long, str) => Math.max(long, str.length), 0);
-    message.channel.send(embedyardim);
-  } else {
-    let command = params[0];
-    if (client.commands.has(command)) {
-      command = client.commands.get(command);
-      message.author.send('asciidoc', `= ${command.help.name} = \n${command.help.description}\nDoğru kullanım: ` + prefix + `${command.help.usage}`);
-    }
-  }
+exports.run = (client, msg) => {
+  const duration = moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]");
+  msg.channel.sendCode("asciidoc", `⇝ Kişisel komutlar | Not:Komutlar . ile baslar
+        • Eglence Komutlari • 		
+• .banned           :: Dene ve Gör!
+• .avatarım         :: Avatarınınızı Gösterir. 	
+• .herkesebendençay :: Herkese Çay Alırsınız. 
+• .koş              :: Koşarsınız.
+• .çayiç            :: Çay İçersiniz. 
+• .çayaşekerat      :: Çaya Şeker Atarsınız. 
+• .çekiç            :: İstediğiniz Kişiye Çekiç Atarsınız.
+• .yumruh-at        :: Yumruk Atarsınız. 
+• .yaz              :: Bota İstediğiniz Şeyi Yazdırırsınız. 
+• .sunucuresmi      :: BOT Sunucunun Resmini Atar. 
+• .sunucubilgi      :: BOT Sunucu Hakkında Bilgi Verir. 
+• .kullanıcıbilgim  :: Sizin Hakkınızda Bilgi Verir.
+        • Yetkilisi Komutlar•		
+• .ban              :: İstediğiniz Kişiyi Sunucudan Banlar. 
+• .kick             :: İstediğiniz Kişiyi Sunucudan Atar. 
+• .unban            :: İstediğiniz Kişinin Yasağını Açar. 
+• .sunucuicon       :: Sunucu İcon Gösterir.
+• .sunucubilgi      :: Sunucu Bilgisini Gosterir.
+• .sustur           :: İstediğiniz Kişiyi Susturur. 
+• .oylama           :: Oylama Açar. 
+• .duyuru           :: Güzel Bir Duyuru Görünümü Sağlar.
+		• Ana Komutlar • 		
+• .yardım           :: BOT Komutlarını Atar. 
+• .bilgi            :: BOT Kendisi Hakkında Bilgi Verir. 
+• .ping             :: BOT Gecikme Süresini Söyler. 
+• .davet            :: BOT Davet Linkini Atar. 
+• .istatistik       :: BOT İstatistiklerini Atar.
+    Sayfa 1 / 1 | Yapımcım: ! 👑✶Utku.xxl✶👑#6337`);
 };
 
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['h', 'halp', 'help', 'y'],
+  aliases: [],
   permLevel: 0
 };
 
 exports.help = {
   name: 'yardım',
-  description: 'Tüm komutları gösterir.',
-  usage: 'yardım [komut]'
+  description: 'Tüm komutları listeler. İsterseniz bir komut hakkında yardım eder..',
+  usage: 'yardım'
 };
