@@ -111,14 +111,14 @@ client.on('guildMemberRemove', member => {
 client.on("guildMemberAdd", member => {
     var channel = member.guild.channels.find("name", "oto-rol");
 
-    var role = member.guild.roles.find("name", ":x:ＫＡＹＩＴＳＩＺ ＵＹＥ:x:");
+    var role = member.guild.roles.find("name", "❌ＫＡＹＩＴＳＩＺ ＵＹＥ❌");
     if (!role) return;
 
     member.addRole(role); 
 
     channel.send(member+ " artık " + role + " Rolü İle Aramızda");
 
-  member.send("Aramıza hoş geldin! Artık ❌ＫＡＹＩＴＳＩＺ ＵＹＥ❌ Rolüne Sahipsin İyi Eğlenceler")
+  member.send("Aramıza hoş geldin! Artık ＫＡＹＩＴＳＩＺ ＵＹＥ Rolüne Sahipsin İyi Eğlenceler")
 
 });
 
