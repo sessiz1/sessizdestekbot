@@ -14,13 +14,6 @@ exports.run = (client, message) => {
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
     .setDescription('İşte Davet Linkim: https://discordapp.com/api/oauth2/authorize?client_id=492345428608679956&permissions=8&scope=bot Buda Bizim Sunucunun :)  https://discord.gg/7WRwWdn
-BİR SUNUCUYA KATILMAK İÇİN DAVET EDİLDİN
-
-| ★ＳＥＳＳＩＺ★ＡＲＭＹ ★| +293
-28 Online
-286 Members
-
-Katıldı
 ');
     return message.author.sendEmbed(pingozel)
 };
