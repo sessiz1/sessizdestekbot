@@ -122,6 +122,19 @@ client.on("guildMemberAdd", member => {
 
 });
 
+client.on('message', msg => {
+if (msg.content.toLowerCase() === prefix + "sigara") {
+msg.channel.send('smoking cloudcloudcloud')
+.then(nmsg => nmsg.edit('smoking cloudcloudcloud'))
+.then(nmsg => nmsg.edit('smoking cloudcloud'))
+.then(nmsg => nmsg.edit('smoking cloudcloud'))
+.then(nmsg => nmsg.edit('smoking cloud'))
+.then(nmsg => nmsg.edit('smoking cloud'))
+.then(nmsg => nmsg.edit('Sigaram bitti | Sigara İçmeyiniz. no_smoking Sigara Sağlığa Zararlıdır Bot Sigara İçmenizi Önermez!!!'));
+}
+});
+
+
 client.elevation = message => {
   if(!message.guild) {
 	return; }
