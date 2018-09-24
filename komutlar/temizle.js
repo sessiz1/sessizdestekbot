@@ -9,7 +9,7 @@ exports.run = function(client, message, args) {
   return message.author.sendEmbed(ozelmesajuyari); }
   if (!message.guild.member(client.user).hasPermission("MANAGE_MESSAGES")) {
 	const botunmesajyonet = new Discord.RichEmbed()
-    .setColor(0xD97634)
+    .setColor(0xD00000)
     .setTimestamp()
     .setAuthor(message.author.username, message.author.avatarURL)
     .addField(':warning: Uyarı :warning:', 'Mesajları silebilmem için `Mesajları Yönet` yetkisine sahip olmalıyım.')
