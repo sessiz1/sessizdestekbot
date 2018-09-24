@@ -133,7 +133,20 @@ msg.channel.send('smoking cloudcloudcloud')
 .then(nmsg => nmsg.edit('Sigaram bitti | Sigara İçmeyiniz. no_smoking Sigara Sağlığa Zararlıdır Bot Sigara İçmenizi Önermez!!!'));
 }
 });
+client.on("message", msg => {
+        const kufur = ["oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak", "amcık", "amık", "yarram", "sikimi ye", "mk", "mq", "aq", "ak", "amq",];
+        if (kufur.some(word => msg.content.includes(word))) {
+          try {
+             if (!msg.member.hasPermission("BAN_MEMBERS")) {
+                  msg.delete();
 
+                  return msg.reply('Küfür etmemelisin! warning').then(msg => msg.delete(3000));
+             }
+          } catch(err) {
+            console.log(err);
+          }
+        }
+    });
 
 client.elevation = message => {
   if(!message.guild) {
