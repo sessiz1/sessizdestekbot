@@ -108,20 +108,6 @@ client.on('guildMemberRemove', member => {
   channel.sendEmbed(embed);
 });
 
-client.on("guildMemberAdd", member => {
-  var channel = member.guild.channels.find("name", "oto-rol");
-
-  var role = member.guild.roles.find("name", ":x:ＫＡＹＩＴＳＩＺ ＵＹＥ:x:");
-  if (!role) return;
-
-  member.addRole(role); 
-
-  channel.send(member+ " artık " + role + " Rolü İle Aramızda");
-
-member.send("Aramıza hoş geldin! Artık :x:ＫＡＹＩＴＳＩＺ ＵＹＥ:x: Rolüne Sahipsin ❌ＫＡＹＩＴＬＩ ＵＹＥ❌ Rolüne Sahip Olmak İçin #✔🌟sohbet-kayıt🌟 Kanalına İsim ve Yaş Belirtmelisiniz İyi Eğlenceler")
-
-});
-
 client.elevation = message => {
   if(!message.guild) {
 	return; }
