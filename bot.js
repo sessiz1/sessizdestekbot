@@ -1,4 +1,4 @@
-﻿const Discord = require('discord.js');
+const Discord = require('discord.js');
 const client = new Discord.Client();
 const ayarlar = require('./ayarlar.json');
 const chalk = require('chalk');
@@ -80,19 +80,47 @@ client.unload = command => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'sa') {
-    msg.reply('Aleyküm selam,  Hoşgeldin :D');
+    msg.reply('Aleyküm selam,  hoş geldin ^^');
   }
 });
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'hayırsız bot') {
-    msg.reply('**Öyle Olsun :sob: :sob:** ');
-  }
+////////////////////////////////////////////////
+client.on('guildMemberAdd', member => {
+  const channel = member.guild.channels.find('name', 'giriş-çıkış');
+  if (!channel) return;
+  const embed = new Discord.RichEmbed()
+  .setColor('RANDOM')
+  .setAuthor(member.user.username, member.user.avatarURL)
+  .setThumbnail(member.user.avatarURL)
+  .setTitle(':inbox_tray:  | Sunucuya Katıldı | Hoşgeldin ')
+  .setTimestamp()
+  channel.sendEmbed(embed);
 });
 
+client.on('guildMemberRemove', member => {
+  const channel = member.guild.channels.find('name', 'giriş-çıkış');
+  if (!channel) return;
+  const embed = new Discord.RichEmbed()
+  .setColor('RANDOM')
+  .setAuthor(member.user.username, member.user.avatarURL)
+  .setThumbnail(member.user.avatarURL)
+  .setTitle(':outbox_tray: | Sunucudan Ayrıldı | Görüşürüz ')
+  .setTimestamp()
+  channel.sendEmbed(embed);
+});
 
+client.on("guildMemberAdd", member => {
+  var channel = member.guild.channels.find("name", "oto-rol");
 
+  var role = member.guild.roles.find("name", ":x:ＫＡＹＩＴＳＩＺ ＵＹＥ:x:");
+  if (!role) return;
 
+  member.addRole(role); 
 
+  channel.send(member+ " artık " + role + " Rolü İle Aramızda");
+
+member.send("Aramıza hoş geldin! Artık :x:ＫＡＹＩＴＳＩＺ ＵＹＥ:x: Rolüne Sahipsin ❌ＫＡＹＩＴＬＩ ＵＹＥ❌ Rolüne Sahip Olmak İçin #✔🌟sohbet-kayıt🌟 Kanalına İsim ve Yaş Belirtmelisiniz İyi Eğlenceler")
+
+});
 
 client.elevation = message => {
   if(!message.guild) {
