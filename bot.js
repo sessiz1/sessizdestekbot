@@ -108,6 +108,21 @@ client.on('guildMemberRemove', member => {
   channel.sendEmbed(embed);
 });
 
+//////////////////////////
+client.on("guildMemberAdd", member => {
+    var channel = member.guild.channels.find("name", "oto-rol");
+
+    var role = member.guild.roles.find("name", ":x:ＫＡＹＩＴＳＩＺ ＵＹＥ:x:");
+    if (!role) return;
+
+    member.addRole(role); 
+
+    channel.send(member+ " artık " + role + " Rolü İle Aramızda");
+
+  member.send("Aramıza hoş geldin! Artık ❌ＫＡＹＩＴＳＩＺ ＵＹＥ❌ Rolüne Sahipsin İyi Eğlenceler")
+
+});z
+
 client.elevation = message => {
   if(!message.guild) {
 	return; }
