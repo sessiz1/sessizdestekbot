@@ -13,6 +13,7 @@ exports.run = (client, msg) => {
 • .herkesebendençay :: Herkese Çay Alırsınız. 
 • .koş              :: Koşarsınız.
 • .çayiç            :: Çay İçersiniz. 
+• .balıktut         :: Balık Tutarsınız 
 • .çayaşekerat      :: Çaya Şeker Atarsınız. 
 • .çekiç            :: İstediğiniz Kişiye Çekiç Atarsınız.
 • .yumruh-at        :: Yumruk Atarsınız. 
