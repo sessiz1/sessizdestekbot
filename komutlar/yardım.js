@@ -15,6 +15,7 @@ exports.run = (client, msg) => {
 • .çayiç            :: Çay İçersiniz. 
 • .balıktut         :: Balık Tutarsınız 
 • .çayaşekerat      :: Çaya Şeker Atarsınız. 
+• .kaçcm            :: Malafat Ölçer
 • .çekiç            :: İstediğiniz Kişiye Çekiç Atarsınız.
 • .yumruh-at        :: Yumruk Atarsınız. 
 • .yaz              :: Bota İstediğiniz Şeyi Yazdırırsınız. 
@@ -30,6 +31,8 @@ exports.run = (client, msg) => {
 • .sustur           :: İstediğiniz Kişiyi Susturur. 
 • .oylama           :: Oylama Açar. 
 • .duyuru           :: Güzel Bir Duyuru Görünümü Sağlar.
+• .otorolbilgi      :: Otorol Hakkında Bilgi Verir
+• .öneri            :: BOT Destek Sunucuna Öneriniz Gider
 		• Ana Komutlar • 		
 • .yardım           :: BOT Komutlarını Atar. 
 • .bilgi            :: BOT Kendisi Hakkında Bilgi Verir. 
