@@ -20,6 +20,7 @@ exports.run = (client, msg) => {
 • .yumruh-at        :: Yumruk Atarsınız. 
 • .yaz              :: Bota İstediğiniz Şeyi Yazdırırsınız. 
 • .öp               :: Öpücük Atar.
+• .sins-aga         :: Kel Bir Abi Gösterir.
 • .sunucuresmi      :: BOT Sunucunun Resmini Atar. 
 • .sunucubilgi      :: BOT Sunucu Hakkında Bilgi Verir. 
 • .kullanıcıbilgim  :: Sizin Hakkınızda Bilgi Verir.
