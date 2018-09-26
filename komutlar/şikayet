@@ -1,0 +1,38 @@
+const Discord = require('discord.js');
+
+
+exports.run = function(client, message, args) {
+
+	var öneri = args.slice(0).join(' ');
+	var guildID = "450301225133539335";
+	var channelID = "491265718168584203";
+	
+	if (!öneri){
+		return message.reply("Bir mesaj belirtin! Doğru kullanım: **.şikayet [sebep]**");
+	} else {
+		var embed = new Discord.RichEmbed()
+			.setTimestamp()
+			.addField("Eylem:", "ŞİKAYET")
+			.addField("Kullanıcı:", message.author.tag)
+			.addField("ID", message.author.id)
+			.addField("Öneri", öneri)
+		
+		client.guilds.get(guildID).channels.get(channelID).send(embed);
+		message.channel.send("Şikayetiniz alınmıştır! Teşekkür ederiz.");
+	};
+
+
+};
+
+exports.conf = {
+  enabled: true,
+  guildOnly: false,
+  aliases: ["şikayet"], 
+  permLevel: 0 
+};
+
+exports.help = {
+  name: 'şikayet', 
+  description: "Şikayetinizi Bildirirsiniz", 
+  usage: 'şikayet [sebep]' 
+};
