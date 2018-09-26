@@ -21,6 +21,8 @@ exports.run = (client, msg) => {
 • .yaz              :: Bota İstediğiniz Şeyi Yazdırırsınız. 
 • .öp               :: Öpücük Atar.
 • .sins-aga         :: Kel Bir Abi Gösterir.
+• .sor              :: 8ball İle Soru Sorar
+• .stresçarkı       :: Stres Atarsınız
 • .sunucuresmi      :: BOT Sunucunun Resmini Atar. 
 • .sunucubilgi      :: BOT Sunucu Hakkında Bilgi Verir. 
 • .kullanıcıbilgim  :: Sizin Hakkınızda Bilgi Verir.
