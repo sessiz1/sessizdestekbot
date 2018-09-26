@@ -23,9 +23,12 @@ exports.run = (client, msg) => {
 • .sins-aga         :: Kel Bir Abi Gösterir.
 • .sor              :: 8ball İle Soru Sorar
 • .stresçarkı       :: Stres Atarsınız
+• .şikayet          :: Bot Destek Sunucusuna Şikayetinizi Yollar
+• .öneri            :: Bot Destek Sunucusuna Önerinizi Yollar
 • .sunucuresmi      :: BOT Sunucunun Resmini Atar. 
 • .sunucubilgi      :: BOT Sunucu Hakkında Bilgi Verir. 
 • .kullanıcıbilgim  :: Sizin Hakkınızda Bilgi Verir.
+• .şikayet          :: Bot Destek Sunucusuna Şiakeytinizi Yollar
         • Yetkilisi Komutlar•		
 • .ban              :: İstediğiniz Kişiyi Sunucudan Banlar. 
 • .kick             :: İstediğiniz Kişiyi Sunucudan Atar. 
