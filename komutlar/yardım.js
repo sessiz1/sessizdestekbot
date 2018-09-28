@@ -8,39 +8,48 @@ exports.run = (client, msg) => {
   const duration = moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]");
   msg.channel.sendCode("asciidoc", `⇝ Kişisel komutlar | Not:Komutlar vt! ile baslar
         • Eglence Komutlari		
-• .banned           :: Dene Ve Gör.
-• .avatarım	        :: Avatarınınızı Gösterir.	
-• .herkesebendençay :: Herkese Çay Alırsınız.
+• .banned           :: Dene ve Gör!
+• .avatarım         :: Avatarınınızı Gösterir. 	
+• .herkesebendençay :: Herkese Çay Alırsınız. 
 • .koş              :: Koşarsınız.
-• .çayiç            :: Çay İçersiniz.
+• .çayiç            :: Çay İçersiniz. 
+• .balıktut         :: Balık Tutarsınız 
+• .çayaşekerat      :: Çaya Şeker Atarsınız. 
+• .kaçcm            :: Malafat Ölçer
 • .çekiç            :: İstediğiniz Kişiye Çekiç Atarsınız.
-        • Bilgi Komutlari		
-• değişiklikler     :: Sunucuda Yapilan değişiklikleri gosterir.
-• istatistik        :: Bot Istatistiligini Gosterir.
-• kullanıcıbilgim   :: kullanıcı bilgini gosterir.
-• sunucuicon        :: Sunucu İcon Gösterir.
-• sunucubilgi       :: Sunucu Bilgisini Gosterir.
-• yapimcim          :: Bot Yapimcisini Gosterir.
-• davet             :: Davet Link Verir.
-• sponsor           :: Sponsorlarimizi Gosterir.
-		• Moderasyon Komutlari		
-• anket :: Anket Acar		
-• ban   :: İstediğiniz kişiyi sunucudan yasaklar.
-• kick    :: İstediğiniz kişiyi sunucudan atar.
-• sustur  :: İstediğiniz kişiyi susturur.
-• temizle :: Mesajları siler.
-• uyar    :: İstediğiniz kişiye uyarı verir.
-        • Minecraft Komutlari	
-• mcödül  :: Istediniz Yaziyi Minecraft Basarisina Dondurur.
-        •  Genel	
-• hastebin :: Yazdin Yaziyi hastebin cevirir.		
-• ailemiz  :: Bot Kac Sunucuda Oldunu Gosterir.		
-• randomşifre :: Kafadan Sifre Verir		
-• komutlar :: Tüm komutları listeler.
-• ping     :: Botun pingini gösterir.
-• duyuru   :: Sunucunuzda duyuru yapmanızı sağlar.
-• avatarım :: Avatarini Gosterir
-    Sayfa 1 / 1 | Yapımcım: ! ๖̶̶̶ۣۣۜۜ͜ζ͜͡xChairs#4713`);
+• .yumruh-at        :: Yumruk Atarsınız. 
+• .yaz              :: Bota İstediğiniz Şeyi Yazdırırsınız. 
+• .öp               :: Öpücük Atar.
+• .sins-aga         :: Kel Bir Abi Gösterir.
+• .sor              :: 8ball İle Soru Sorar
+• .espriyap         :: Espri Yapar
+• .stresçarkı       :: Stres Atarsınız
+• .şikayet          :: Bot Destek Sunucusuna Şikayetinizi Yollar
+• .sunucuresmi      :: BOT Sunucunun Resmini Atar. 
+• .sunucubilgi      :: BOT Sunucu Hakkında Bilgi Verir. 
+• .kullanıcıbilgim  :: Sizin Hakkınızda Bilgi Verir.
+        • Yetkilisi Komutlar•		
+• .ban              :: İstediğiniz Kişiyi Sunucudan Banlar. 
+• .kick             :: İstediğiniz Kişiyi Sunucudan Atar. 
+• .unban            :: İstediğiniz Kişinin Yasağını Açar. 
+• .sunucuicon       :: Sunucu İcon Gösterir.
+• .sunucubilgi      :: Sunucu Bilgisini Gosterir.
+• .sustur           :: İstediğiniz Kişiyi Susturur. 
+• .ailemiz          :: Ailemizi Gösterir
+• .oylama           :: Oylama Açar. 
+• .duyuru           :: Güzel Bir Duyuru Görünümü Sağlar.
+• .öneri            :: BOT Destek Sunucuna Öneriniz Gider
+• .basvuru          :: Yetkili Alımları İçin Basvuru Yapmış Olursunuz
+                      • BOT Özellikleri Komutları•	
+• .otorolbilgi      :: Otorol Hakkında Bilgi Verir.
+• .diskoayar        :: Diskonun Nasıl Çalıştığını Gösterir.                 	
+		• Ana Komutlar • 		
+• .yardım           :: BOT Komutlarını Atar. 
+• .bilgi            :: BOT Kendisi Hakkında Bilgi Verir. 
+• .ping             :: BOT Gecikme Süresini Söyler. 
+• .davet            :: BOT Davet Linkini Atar. 
+• .istatistik       :: BOT İstatistiklerini Atar.
+    Sayfa 1 / 1 | Yapımcım: ! 👑✶Utku.xxl✶👑#6337`);
 };
 
 exports.conf = {
