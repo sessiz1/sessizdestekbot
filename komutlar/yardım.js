@@ -40,6 +40,9 @@ exports.run = (client, msg) => {
 • .duyuru           :: Güzel Bir Duyuru Görünümü Sağlar.
 • .öneri            :: BOT Destek Sunucuna Öneriniz Gider
 • .basvuru          :: Yetkili Alımları İçin Basvuru Yapmış Olursunuz 	
+                • ÖZEL KOMUTLAR • 
+• .otorolbilgi      :: Otorol Hakkında Bilgi Verir.
+• .diskoayar        :: Diskonun Nasıl Çalıştığını Gösterir.       
 		• Ana Komutlar • 		
 • .yardım           :: BOT Komutlarını Atar. 
 • .bilgi            :: BOT Kendisi Hakkında Bilgi Verir. 
