@@ -122,17 +122,16 @@ client.on("guildMemberAdd", member => {
 
 });
 
-client.on('message', msg => {
-if (msg.content.toLowerCase() === prefix + "sigara") {
-msg.channel.send('smoking cloudcloudcloud')
-.then(nmsg => nmsg.edit('smoking cloudcloudcloud'))
-.then(nmsg => nmsg.edit('smoking cloudcloud'))
-.then(nmsg => nmsg.edit('smoking cloudcloud'))
-.then(nmsg => nmsg.edit('smoking cloud'))
-.then(nmsg => nmsg.edit('smoking cloud'))
-.then(nmsg => nmsg.edit('Sigaram bitti | Sigara İçmeyiniz. no_smoking Sigara Sağlığa Zararlıdır Bot Sigara İçmenizi Önermez!!!'));
+client.on('message', async msg => {
+  if (msg.content.toLowerCase() === prefix + "disko") {
+ if (msg.channel.type === "dm") return;
+const rol = 'disko' // 
+setInterval(() => {
+    msg.guild.roles.find(s => s.name === rol).setColor("RANDOM")
+    }, 7000);
 }
 });
+
 client.on("message", msg => {
         const kufur = ["oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak", "amcık", "amık", "yarram", "sikimi ye", "mk", "mq", "aq", "ak", "amq",];
         if (kufur.some(word => msg.content.includes(word))) {
