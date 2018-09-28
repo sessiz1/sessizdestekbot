@@ -22,6 +22,7 @@ exports.run = (client, msg) => {
 • .öp               :: Öpücük Atar.
 • .sins-aga         :: Kel Bir Abi Gösterir.
 • .sor              :: 8ball İle Soru Sorar
+• .espriyap         :: Espri Yapar
 • .stresçarkı       :: Stres Atarsınız
 • .şikayet          :: Bot Destek Sunucusuna Şikayetinizi Yollar
 • .sunucuresmi      :: BOT Sunucunun Resmini Atar. 
@@ -34,11 +35,14 @@ exports.run = (client, msg) => {
 • .sunucuicon       :: Sunucu İcon Gösterir.
 • .sunucubilgi      :: Sunucu Bilgisini Gosterir.
 • .sustur           :: İstediğiniz Kişiyi Susturur. 
+• .ailemiz          :: Ailemizi Gösterir
 • .oylama           :: Oylama Açar. 
 • .duyuru           :: Güzel Bir Duyuru Görünümü Sağlar.
-• .otorolbilgi      :: Otorol Hakkında Bilgi Verir
 • .öneri            :: BOT Destek Sunucuna Öneriniz Gider
 • .basvuru          :: Yetkili Alımları İçin Basvuru Yapmış Olursunuz
+                      • BOT Özellikleri Komutları•	
+• .otorolbilgi      :: Otorol Hakkında Bilgi Verir.
+• .diskobilgir        :: Diskonun Nasıl Çalıştığını Gösterir.                 	
 		• Ana Komutlar • 		
 • .yardım           :: BOT Komutlarını Atar. 
 • .bilgi            :: BOT Kendisi Hakkında Bilgi Verir. 
