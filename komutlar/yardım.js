@@ -22,12 +22,12 @@ exports.run = (client, msg) => {
 • .öp               :: Öpücük Atar.
 • .sins-aga         :: Kel Bir Abi Gösterir.
 • .sor              :: 8ball İle Soru Sorar
-• .espriyap         :: Espri Yapar
-• .ailemiz          :: Ailemizi Gösterir
-• .başvuru          :: Yönetim Ekibine Başvuru Yaparsınız
-• .duyuruyap        :: Duyuru Yaparsınız
-• .stresçarkı       :: Stres Atarsınız
-• .şikayet          :: Bot Destek Sunucusuna Şikayetinizi Yollar
+• .espriyap         :: Espri Yapar.
+• .ailemiz          :: Ailemizi Gösterir.
+• .başvuru          :: Yönetim Ekibine Başvuru Yaparsınız.
+• .duyuruyap        :: Duyuru Yaparsınız.
+• .stresçarkı       :: Stres Atarsınız.
+• .şikayet          :: Bot Destek Sunucusuna Şikayetinizi Yollar.
 • .sunucuresmi      :: BOT Sunucunun Resmini Atar. 
 • .sunucubilgi      :: BOT Sunucu Hakkında Bilgi Verir. 
 • .kullanıcıbilgim  :: Sizin Hakkınızda Bilgi Verir.
