@@ -7,7 +7,7 @@ require("moment-duration-format");
 exports.run = (client, msg) => {
   const duration = moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]");
   msg.channel.sendCode("asciidoc", `⇝ Kişisel komutlar | Not:Komutlar vt! ile baslar
-        • Eglence Komutlari		
+           • Eglence Komutlari
 • .banned           :: Dene ve Gör!
 • .avatarım         :: Avatarınınızı Gösterir. 	
 • .herkesebendençay :: Herkese Çay Alırsınız. 
@@ -23,15 +23,12 @@ exports.run = (client, msg) => {
 • .sins-aga         :: Kel Bir Abi Gösterir.
 • .sor              :: 8ball İle Soru Sorar
 • .espriyap         :: Espri Yapar.
-• .ailemiz          ::Ailemizi Gösterir.
-• .başvuru          :: Yönetim Ekibine Başvuru Yaparsınız.
-• .duyuruyap        :: Duyuru Yaparsınız.
 • .stresçarkı       :: Stres Atarsınız.
 • .şikayet          :: Bot Destek Sunucusuna Şikayetinizi Yollar.
 • .sunucuresmi      :: BOT Sunucunun Resmini Atar. 
 • .sunucubilgi      :: BOT Sunucu Hakkında Bilgi Verir. 
 • .kullanıcıbilgim  :: Sizin Hakkınızda Bilgi Verir.
-        • Yetkilisi Komutlar•		
+         • Yetkilisi Komutlar•		
 • .ban              :: İstediğiniz Kişiyi Sunucudan Banlar. 
 • .kick             :: İstediğiniz Kişiyi Sunucudan Atar. 
 • .unban            :: İstediğiniz Kişinin Yasağını Açar. 
@@ -41,9 +38,10 @@ exports.run = (client, msg) => {
 • .ailemiz          :: Ailemizi Gösterir
 • .oylama           :: Oylama Açar. 
 • .duyuru           :: Güzel Bir Duyuru Görünümü Sağlar.
+• .duyuruyap        :: Duyuru Yaparsınız.
 • .öneri            :: BOT Destek Sunucuna Öneriniz Gider
-• .basvuru          :: Yetkili Alımları İçin Basvuru Yapmış Olursunuz 	
-		• Ana Komutlar • 		
+• .başvuru          :: Yetkili Alımları İçin Basvuru Yapmış Olursunuz 	
+		       • Ana Komutlar • 		
 • .yardım           :: BOT Komutlarını Atar. 
 • .bilgi            :: BOT Kendisi Hakkında Bilgi Verir. 
 • .ping             :: BOT Gecikme Süresini Söyler. 
