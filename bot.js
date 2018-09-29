@@ -132,8 +132,9 @@ setInterval(() => {
 }
 });
 
+
 client.on("message", msg => {
-        const kufur = ["oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak", "amcık", "amık", "yarram", "sikimi ye", "mk", "mq", "aq", "ak", "amq",];
+        const kufur = ["aq", "oç", "amk", "ananı sikiyim", "ananıskm", "piç", "amk", "amsk", "sikim", "sikiyim", "orospu çocuğu", "piç kurusu", "kahpe", "orospu", "mal", "sik", "yarrak", "amcık", "amık", "yarram", "sikimi ye", "mk", "mq", "aq", "ak", "amq",];
         if (kufur.some(word => msg.content.includes(word))) {
           try {
              if (!msg.member.hasPermission("BAN_MEMBERS")) {
@@ -141,6 +142,21 @@ client.on("message", msg => {
 
                   return msg.reply('Küfür etmemelisin! warning').then(msg => msg.delete(3000));
              }
+          } catch(err) {
+            console.log(err);
+          }
+        }
+    });
+	
+	client.on("message", msg => {
+   const link = [".com", ".net", ".xyz", ".tk", ".pw", ".io", ".me", ".gg", "www.", "https", "http", ".gl", ".org", ".com.tr", ".biz", "net", ".rf.gd", ".az", ".party"];
+        if (link.some(word => msg.content.includes(word))) {
+          try {
+             if (!msg.member.hasPermission("BAN_MEMBERS")) {
+                  msg.delete();
+
+                  return msg.reply('Reklam yapmamalısın! :warning:').then(msg => msg.delete(3000));
+             }              
           } catch(err) {
             console.log(err);
           }
