@@ -37,7 +37,6 @@ exports.run = (client, msg) => {
 • .sustur           :: İstediğiniz Kişiyi Susturur. 
 • .ailemiz          :: Ailemizi Gösterir
 • .oylama           :: Oylama Açar. 
-• .duyuru           :: Güzel Bir Duyuru Görünümü Sağlar.
 • .duyuruyap        :: Duyuru Yaparsınız.
 • .öneri            :: BOT Destek Sunucuna Öneriniz Gider
 • .başvuru          :: Yetkili Alımları İçin Basvuru Yapmış Olursunuz 	
